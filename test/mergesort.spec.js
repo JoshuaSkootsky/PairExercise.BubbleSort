@@ -18,6 +18,12 @@ describe('Merge function', function() {
 });
 
 describe('Merge Sort function', function() {
+  it('is able to sort an empty array', function() {
+    expect(mergeSort([])).to.be.deep.equal([]);
+  });
+});
+
+describe('Merge Sort function', function() {
   it('is able to sort an array', function() {
     expect(mergeSort([2, 9, 7, 3, 4])).to.be.deep.equal([2, 3, 4, 7, 9]);
     expect(
@@ -37,6 +43,7 @@ describe('Merge Sort function2', function() {
     { age: 101 },
     { age: 99 },
   ];
+
   const ageTest = (a, b) => {
     // return a.age < b.age;
     // return a.age > b.age;

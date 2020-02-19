@@ -38,7 +38,7 @@ function merge(array1, array2, comparator = lt) {
 }
 
 function mergeSort(array, comparator = lt) {
-  if (array.length === 1) {
+  if (array.length <= 1) {
     return array;
   }
 
