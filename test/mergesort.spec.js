@@ -27,7 +27,16 @@ describe('Merge Sort function', function() {
 });
 
 describe('Merge Sort function2', function() {
-  let arrToSort = [{ age: 9 }, { age: 2 }, { age: 4 }];
+  let arrToSort = [
+    { age: 9 },
+    { age: 2 },
+    { age: 4 },
+    { age: 55 },
+    { age: 0 },
+    { age: 67 },
+    { age: 101 },
+    { age: 99 },
+  ];
   const ageTest = (a, b) => {
     // return a.age < b.age;
     // return a.age > b.age;
